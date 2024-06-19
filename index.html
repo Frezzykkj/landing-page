@@ -19,7 +19,7 @@
             <a href="#"><li>Serviços</li></a>
             <a href="#"><li>Sobre</li></a>
             <a href="#"><li>Contato</li></a>
-            <a href="#" id="inscreva-se-btn"><li>Já tem uma conta?</li></a>
+            <a href="#" id="inscreva-se-btn"><li>Ainda não tem uma conta?</li></a>
         </ul>
     </header>
 
@@ -30,12 +30,15 @@
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
-            <form>
-                <input type="text" placeholder="nome" id="nome-btn">
-                <input type="email" placeholder="email">
-                <button type="submit" id="botaoenviar">enviar</button>
 
+            <form onsubmit="return checkLogin()">
+                <label for="usuario">Nome de Usuário:</label>
+                <input type="text" placeholder="Usuario" id="usuario" name="usuario" required>
+                <label for="senha">Senha:</label>
+                <input type="password" placeholder="Senha" id="senha" name="senha" required>
+                <button type="submit">Entrar</button>
             </form>
+
         </aside>
 
         <article>
@@ -43,15 +46,22 @@
         </article>
     </main>
     
+    <script>
+        function checkLogin() {
+            var usuarioDigitado = document.getElementById("usuario").value;
+            var senhaDigitada = document.getElementById("senha").value;
+            var usuarioCorreto = "cleber50e7"; // Defina o nome de usuário correto aqui
+            var senhaCorreta = "joaoaugustogonsalves90e9"; // Defina a senha correta aqui
+            
+            if (usuarioDigitado === usuarioCorreto && senhaDigitada === senhaCorreta) {
+                window.location.href = "pagina_restrita.html"; // Redireciona para a página restrita
+                return false; // Evita o envio do formulário
+            } else {
+                alert("Nome de usuário ou senha incorretos. Tente novamente.");
+                return false; // Evita o envio do formulário
+            }
+        }
+    </script>
+
 </body>
 </html>
-
-<script>
-    // script.js
-    const botaoenviar = document.getElementById('botaoenviar');
-    
-    botaoenviar.addEventListener('click', function() {
-        href="/home.html"
-    });
-    
-    </script>
