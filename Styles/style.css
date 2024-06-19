@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+
+#title{
+
+flex-direction: column;
+line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: blueviolet;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: blueviolet;
+    color: white;
+    transition: 0.5s;
+}
+
+span{
+    color: blueviolet;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+p{
+    line-height: 20px;
+    max-width: 520px;
+    font-family: poppinslight;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input{
+    margin-top: 15px;
+    height: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+    font-size: 15px;
+}
+
+form button {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
