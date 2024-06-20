@@ -20,6 +20,18 @@ main{
     margin-top: 50px;
 }
 
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+p{
+    line-height: 20px;
+    max-width: 520px;
+    font-family: poppinslight;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -42,18 +54,6 @@ form button {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-}
-
-h2{
-    font-size: 56px;
-    line-height: 10px;
-    font-family: poppinsmedium;
-}
-
-p{
-    line-height: 20px;
-    max-width: 520px;
-    font-family: poppinslight;
 }
 
 img{
