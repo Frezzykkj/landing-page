@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./Styles/style(criar conta).css" rel="stylesheet">
-    <title>Document</title>
+    <link href="./Styles/fonts.css" rel="stylesheet">
+    <title>Registro</title>
 </head>
 <body>
     <main>
         <aside>
-            <h2><span>Bem-Vindo de volta!!</span></h2>
-            <h2>Faça login</h2>
-            <p>
-                Insira suas informações de login abaixo para ter acesso ao site
-            </p>
             
-            <h3>Registro</h3>
+            <h2>Registro</h3>
+            <p>Forneça as informações abaixos para se registrar</p>
             <form action="processar_registro.php" method="POST">
                 <label for="usuario">Nome de Usuário:</label>
                 <input type="text" placeholder="Usuario" id="usuario" name="usuario" required>
+
                 <label for="email">email:</label>
                 <input type="email" placeholder="Email" id="email" name="email" required>
+
                 <label for="senha">Senha:</label>
                 <input type="password" placeholder="Senha" id="senha" name="senha" required>
-                <button type="submit">Entrar</button>
+
+                <label for="senha">Confirme a Senha:</label>
+                <input type="password" placeholder="confirme a Senha" id="confirm_senha" name="confirm_senha" required>
+
+                <button type="submit">registrar</button>
             </form>
 
         </aside>
