@@ -50,11 +50,11 @@
         function checkLogin() {
             var usuarioDigitado = document.getElementById("usuario").value;
             var senhaDigitada = document.getElementById("senha").value;
-            var usuarioCorreto = "LV"; // Defina o nome de usuário correto aqui
+            var usuarioCorreto = "admin"; // Defina o nome de usuário correto aqui
             var senhaCorreta = "0803"; // Defina a senha correta aqui
             
             if (usuarioDigitado === usuarioCorreto && senhaDigitada === senhaCorreta) {
-                window.location.href = "pagina_restrita.html"; // Redireciona para a página restrita
+                window.location.href = "home.html"; // Redireciona para a página restrita
                 return false; // Evita o envio do formulário
             } else {
                 alert("Nome de usuário ou senha incorretos. Tente novamente.");
