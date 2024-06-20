@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/Styles/style(criar conta).css" rel="stylesheet">
+    <link href="Styles/style(criar conta).css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <main>
+        <aside>
+            <h2><span>Bem-Vindo de volta!!</span></h2>
+            <h2>Faça login</h2>
+            <p>
+                Insira suas informações de login abaixo para ter acesso ao site
+            </p>
+            
+            <h3>Registro</h3>
+            <form action="processar_registro.php" method="POST">
+                <label for="usuario">Nome de Usuário:</label>
+                <input type="text" placeholder="Usuario" id="usuario" name="usuario" required>
+                <label for="email">email:</label>
+                <input type="email" placeholder="Email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" placeholder="Senha" id="senha" name="senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+
+        </aside>
+
+        <article>
+            <img src="componets/images/77d0a7c454e658833800528e748edbe9.png" alt="purple woman">
+        </article>
+    </main>
     
+    <script>
+        function checkLogin() {
+            var usuarioDigitado = document.getElementById("usuario").value;
+            var senhaDigitada = document.getElementById("senha").value;
+            var usuarioCorreto = "LV"; // Defina o nome de usuário correto aqui
+            var senhaCorreta = "0803"; // Defina a senha correta aqui
+            
+            if (usuarioDigitado === usuarioCorreto && senhaDigitada === senhaCorreta) {
+                window.location.href = "index.html"; // Redireciona para a página restrita
+                return false; // Evita o envio do formulário
+            } else {
+                alert("Nome de usuário ou senha incorretos. Tente novamente.");
+                return false; // Evita o envio do formulário
+            }
+        }
+    </script>
+
 </body>
 </html>
