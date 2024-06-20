@@ -2,6 +2,9 @@ body{
     background-color: black;
     color: white;
     font-family: poppinsregular;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 #title{
@@ -33,4 +36,51 @@ span{
 p{
     font-size: 20px;
 
+}
+
+.chat-list {
+    float: left;
+    width: 30%;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.chat-area {
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* Estilo para os itens da lista de chats */
+#chatList li {
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+#chatList li:hover {
+    background-color: #e0e0e0;
+}
+
+button{
+    margin-top: 15px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 13px;
+}
+
+input{
+    margin-top: 15px;
+    height: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+    font-size: 15px;
 }
