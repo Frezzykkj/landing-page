@@ -57,5 +57,7 @@ form button {
 }
 
 img{
-    margin-left: 20%;
+    margin-left: 60%;
+    margin-top: 20%;
+    transform: rotate(-10deg);
 }
