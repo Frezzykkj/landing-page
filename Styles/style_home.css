@@ -40,7 +40,7 @@ p{
 
 .chat-list {
     float: left;
-    width: 30%;
+    width: 20%;
     height: 100%;
     overflow-y: auto;
     border-right: 1px solid #ccc;
@@ -51,13 +51,13 @@ p{
     float: left;
     width: 70%;
     height: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 
 /* Estilo para os itens da lista de chats */
 #chatList li {
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 5px;
     background-color: blueviolet;
     border-radius: 5px;
@@ -68,8 +68,9 @@ p{
 }
 
 button{
+    margin-left: 10px;
     margin-top: 15px;
-    height: 20px;
+    height: 40px;
     border-radius: 20px;
     background-color: blueviolet;
     color: white;
@@ -83,4 +84,35 @@ input{
     border-radius: 20px;
     color: black;
     font-size: 15px;
+}
+
+.message-input{
+    padding: 10px 20px; /* Adiciona espaço interno ao botão */
+    color: white; /* Cor do texto dentro do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 20px; /* Distância do botão ao fundo da página */
+    right: 790px; /* Distância do botão à direita da página */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    color: rgb(0, 0, 0); /* Cor do texto dentro do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: text; /* Muda o cursor para uma mãozinha ao passar por cima */
+    z-index: 1000;
+}
+
+input{
+    width: 500px; /* Largura desejada */
+    height: 20px; /* Altura desejada */
+    padding: 10px;
+    position: fixed;
+    bottom: 30px; /* Distância do botão ao fundo da página */
+    right: 870px; /* Distância do botão à direita da página */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    color: rgb(0, 0, 0); /* Cor do texto dentro do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: text; /* Muda o cursor para uma mãozinha ao passar por cima */
+    z-index: 1000;
 }
