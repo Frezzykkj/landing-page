@@ -30,5 +30,6 @@ li{
     flex-direction: column;
     margin-left: 5px;
     font-family: poppinsmedium;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 10px;
 }
